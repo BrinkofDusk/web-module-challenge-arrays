@@ -114,9 +114,14 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
+function removeFlavorByName(arry, flav) {
+    for (i = 0; i < arry.length; i++) {
+        if (arry[i] === flav) {
+            arry.splice(i, 1);
+            return arry;
+        }
+    }
 
-    /*code here*/
 
 }
 
