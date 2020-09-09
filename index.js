@@ -61,9 +61,10 @@ Your function should add the flavor to the front of the array and console.log th
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 
-function addFlavor(/*code here*/){
+function addFlavor(arry,flav){
 
-    /*code here*/
+    arry.unshift(flav);
+    return arry;
 
 }
 
@@ -78,9 +79,10 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
+function removeLastFlavor(arry){
 
-    /*code here*/
+    arry.pop(31);
+    return arry;
 
 }
 
@@ -93,9 +95,9 @@ Your function should accept:
 
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
 
-function getFlavorByIndex(/*code here*/){
+function getFlavorByIndex(arry, aIdx){
 
-    /*code here*/
+    return arry[aIdx];
 
 }
 
